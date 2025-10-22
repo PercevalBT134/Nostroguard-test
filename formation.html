@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+    <link rel="icon" href="./assets/Images/NOSTROMOGAURD (1).png" type="image/png">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+    <title>Formation de Sensibilisation - NOSTROGUARD</title>
+    <link href="./assets/CSS/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/CSS/formation.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Loader CSS -->
+    <link href="./assets/CSS/loader.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Loader -->
+    <div class="loader"></div>
+
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress"></div>
+
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white shadow-md z-50" id="navbar">
+        <div class="container mx-auto px-6 py-5">
+            <div class="flex items-center justify-between">
+                <div class="left-nav">
+                    <a href="index.html" class="flex items-center">
+                        <div class="text-2xl font-bold text-blue-900">NOSTROGUARD</div>
+                        <img class="logo" src="./assets/Images/NOSTROMOGAURD (1).png" alt="logo">
+                    </a>
+                </div>
+                <div class="flex md:flex space-x-8">
+                    <a href="index.html" class="nav-link">Accueil</a>
+                    <a href="formation.html" class="nav-link">Formation</a>
+                    <a href="tarif.html" class="nav-link">Tarifs</a>
+                    <a href="Contacts.php" class="nav-link">Contactez-nous</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="awareness-hero">
+        <div class="cyber-sphere"></div>
+        <div class="hero-content">
+            <h1 class="glowing-text">Formation de Sensibilisation à la Cybersécurité</h1>
+            <p class="hero-subtitle">Protégez votre entreprise en formant vos équipes</p>
+        </div>
+    </section>
+
+    <!-- Brief Description -->
+    <section class="awareness-section">
+        <div class="brief-description fade-in">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-10">Pourquoi la sensibilisation est importante
+            </h2>
+            <p>La sensibilisation à la cybersécurité est essentielle pour protéger les données sensibles et prévenir les
+                erreurs humaines, qui sont souvent à l'origine des incidents de sécurité. Former les employés à
+                reconnaître les menaces comme le phishing, les attaques par ransomware ou les erreurs de configuration
+                permet de réduire les risques de violations de données et de fuites d'informations.
+
+                Elle favorise également une culture de sécurité au sein de l'entreprise, où chaque individu devient
+                acteur de la protection des systèmes. En outre, la sensibilisation aide à respecter les réglementations
+                en matière de sécurité et à limiter les conséquences financières et réputationnelles d’une attaque, en
+                contribuant à une meilleure gestion des risques.</p>
+        </div>
+
+        <!-- Statistics Charts -->
+        <section class="dark-gradient-section">
+            <div class="container mx-auto px-6">
+                <h2 class="text-4xl font-bold text-center text-white mb-12">Statistiques et Analyses</h2>
+                <div class="cards-grid">
+                    <div class="glass-card">
+                        <canvas id="attackChart"></canvas>
+                        <div class="glow-line"></div>
+                    </div>
+                    <div class="glass-card">
+                        <canvas id="attackTypesChart"></canvas>
+                        <div class="glow-line"></div>
+                    </div>
+                    <div class="glass-card">
+                        <canvas id="costChart"></canvas>
+                        <div class="glow-line"></div>
+                    </div>
+                    <div class="glass-card">
+                        <canvas id="awarenessChart"></canvas>
+                        <div class="glow-line"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Process Section -->
+        <div class="process-grid">
+            <div class="process-card fade-in">
+                <h3>Notre Approche de Sensibilisation</h3>
+                <ul>
+                    <li>Évaluation initiale des connaissances</li>
+                    <li>Formation interactive personnalisée</li>
+                </ul>
+            </div>
+
+            <div class="process-card fade-in">
+                <h3>Évaluation des Résultats</h3>
+                <ul>
+                    <li>Tests pratiques</li>
+                    <li>Questionnaires de validation</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Add Conclusion Section -->
+    <section class="conclusion-section">
+        <div class="conclusion-text">
+            <h2 class="text-2xl font-bold section-title">Pour Conclure</h2>
+            <p>
+                Dans un monde où les cybermenaces se multiplient, se sensibiliser à la cybersécurité est essentiel pour
+                protéger ses données personnelles et professionnelles. Que ce soit contre le vol de données, les
+                ransomwares ou les attaques par phishing, adopter les bonnes pratiques permet de limiter les risques et
+                d'assurer la confidentialité et l'intégrité de vos informations. Une sensibilisation efficace aide
+                également à respecter les obligations légales, comme le RGPD, tout en préservant l'image et la
+                réputation d'une entreprise ou d'un individu. En comprenant les menaces et en sachant comment y faire
+                face, vous renforcez votre sécurité numérique et contribuez à un environnement digital plus sûr pour
+                tous. Se former, c'est prévenir : ne laissez pas les cybercriminels profiter d'une erreur évitable.
+                Adoptez dès maintenant une posture proactive face à la cybersécurité.
+            </p>
+        </div>
+        <a href="quiz.html">
+            <button class="Quiz-btn"> Commencez un Quiz
+            </button>
+        </a>
+
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="text-center">
+                <div class="text-2xl font-bold mb-4">NOSTROGUARD</div>
+                <p class="text-gray-400">Protection • Expertise • Innovation</p>
+                <div class="mt-8 text-sm text-gray-400">
+                    © 2025 NOSTROGUARD Solutions. Tous droits réservés.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./assets/Javascript/index.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Global Chart.js configuration for light theme
+            Chart.defaults.color = 'rgba(255, 255, 255, 0.8)';
+            Chart.defaults.scale.grid.color = 'rgba(255, 255, 255, 0.1)';
+            Chart.defaults.scale.grid.borderColor = 'rgba(255, 255, 255, 0.1)';
+            Chart.defaults.scale.ticks.color = 'rgba(255, 255, 255, 0.8)';
+
+            // Update chart options to include white text
+            const chartOptions = {
+                responsive: true,
+                maintainAspectRatio: false, /* Allow chart to fill container */
+                plugins: {
+                    legend: {
+                        labels: {
+                            color: 'rgba(255, 255, 255, 0.8)',
+                            font: {
+                                size: 14 /* Increase font size */
+                            }
+                        }
+                    }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        grid: {
+                            color: 'rgba(255, 255, 255, 0.1)'
+                        },
+                        ticks: {
+                            color: 'rgba(255, 255, 255, 0.8)',
+                            font: {
+                                size: 12 /* Increase tick font size */
+                            }
+                        }
+                    },
+                    x: {
+                        grid: {
+                            color: 'rgba(255, 255, 255, 0.1)'
+                        },
+                        ticks: {
+                            color: 'rgba(255, 255, 255, 0.8)',
+                            font: {
+                                size: 12 /* Increase tick font size */
+                            }
+                        }
+                    }
+                }
+            };
+
+            // Attack Success Rate Chart
+            const attackCtx = document.getElementById('attackChart').getContext('2d');
+            new Chart(attackCtx, {
+                type: 'bar',
+                data: {
+                    labels: ['Entreprises non sensibilisées', 'Entreprises sensibilisées'],
+                    datasets: [{
+                        label: 'Pourcentage d\'attaques réussies',
+                        data: [75, 25],
+                        backgroundColor: [
+                            'rgba(255, 99, 132, 0.8)',
+                            'rgba(75, 192, 192, 0.8)'
+                        ]
+                    }]
+                },
+                options: {
+                    ...chartOptions,
+                    scales: {
+                        ...chartOptions.scales,
+                        y: {
+                            ...chartOptions.scales.y,
+                            max: 100
+                        }
+                    }
+                }
+            });
+
+            // Attack Types Chart
+            const typesCtx = document.getElementById('attackTypesChart').getContext('2d');
+            new Chart(typesCtx, {
+                type: 'pie',
+                data: {
+                    labels: ['Phishing', 'Malware', 'Social Engineering', 'Password Attacks', 'DDoS'],
+                    datasets: [{
+                        data: [45, 20, 15, 12, 8],
+                        backgroundColor: [
+                            'rgba(255, 99, 132, 0.8)',
+                            'rgba(54, 162, 235, 0.8)',
+                            'rgba(255, 206, 86, 0.8)',
+                            'rgba(75, 192, 192, 0.8)',
+                            'rgba(153, 102, 255, 0.8)'
+                        ]
+                    }]
+                },
+                options: {
+                    ...chartOptions,
+                    plugins: {
+                        ...chartOptions.plugins,
+                        legend: {
+                            position: 'right',
+                            labels: {
+                                color: 'rgba(255, 255, 255, 0.8)'
+                            }
+                        }
+                    }
+                }
+            });
+
+            // Update the Training Impact Chart to show Cost of Cyberattack
+            const costCtx = document.getElementById('costChart').getContext('2d');
+            new Chart(costCtx, {
+                type: 'bar',
+                data: {
+                    labels: ['TPE', 'PME', 'Grande Entreprise'],
+                    datasets: [{
+                        label: 'Coût moyen en milliers d\'euros',
+                        data: [50, 250, 1000],
+                        backgroundColor: [
+                            'rgba(75, 192, 192, 0.8)',
+                            'rgba(54, 162, 235, 0.8)',
+                            'rgba(255, 99, 132, 0.8)'
+                        ]
+                    }]
+                },
+                options: {
+                    ...chartOptions,
+                    scales: {
+                        ...chartOptions.scales,
+                        y: {
+                            ...chartOptions.scales.y,
+                            title: {
+                                display: true,
+                                text: 'Coût en milliers d\'euros',
+                                color: 'rgba(255, 255, 255, 0.8)'
+                            }
+                        }
+                    }
+                }
+            });
+
+            // Awareness Level Chart
+            const awarenessCtx = document.getElementById('awarenessChart').getContext('2d');
+            new Chart(awarenessCtx, {
+                type: 'radar',
+                data: {
+                    labels: [
+                        'Identification des menaces',
+                        'Gestion des mots de passe',
+                        'Sécurité email',
+                        'Protection des données',
+                        'Réponse aux incidents'
+                    ],
+                    datasets: [{
+                        label: 'Avant formation',
+                        data: [30, 40, 35, 25, 20],
+                        backgroundColor: 'rgba(255, 99, 132, 0.2)',
+                        borderColor: 'rgba(255, 99, 132, 1)',
+                        pointBackgroundColor: 'rgba(255, 99, 132, 1)'
+                    }, {
+                        label: 'Après formation',
+                        data: [80, 85, 90, 85, 75],
+                        backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                        borderColor: 'rgba(75, 192, 192, 1)',
+                        pointBackgroundColor: 'rgba(75, 192, 192, 1)'
+                    }]
+                },
+                options: {
+                    ...chartOptions,
+                    scales: {
+                        r: {
+                            beginAtZero: true,
+                            max: 100,
+                            pointLabels: {
+                                color: 'rgba(255, 255, 255, 0.8)'
+                            },
+                            grid: {
+                                color: 'rgba(255, 255, 255, 0.1)'
+                            },
+                            ticks: {
+                                color: 'rgba(255, 255, 255, 0.8)'
+                            }
+                        }
+                    }
+                }
+            });
+        });
+    </script>
+    <!-- Loader JS -->
+    <script src="./assets/Javascript/loader.js"></script>
+    <!-- Mobile Menu Script -->
+    <script src="./assets/Javascript/mobileMenu.js"></script>
+</body>
+
+</html>
